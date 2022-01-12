@@ -19,7 +19,14 @@ class ViewController: UIViewController {
         springLabel.text = """
  Preset:\(animation.animation) \nCurve:\(animation.animationCurve) \nForce:\(String(format: "%.2f", animation.force)) \nDuration:\(String(format: "%.2f", animation.duration)) \nDelay:\(String(format: "%.2f", animation.delay))
  """
+        springAnimationView.animation = animation.animation.rawValue
+        springAnimationView.curve = animation.animationCurve.rawValue
+        springAnimationView.force = animation.force
+        springAnimationView.duration = animation.duration
+        springAnimationView.delay = animation.delay
+        
         springAnimationView.animate()
+        
     }
     
 
