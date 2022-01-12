@@ -16,6 +16,8 @@ class ViewController: UIViewController {
         
         let animation = Animation.getAnimation()
         
+        sender.setTitle("Run \(animation.animation.rawValue)", for: .normal)
+        
         springLabel.text = """
  Preset:\(animation.animation) \nCurve:\(animation.animationCurve) \nForce:\(String(format: "%.2f", animation.force)) \nDuration:\(String(format: "%.2f", animation.duration)) \nDelay:\(String(format: "%.2f", animation.delay))
  """
@@ -26,9 +28,6 @@ class ViewController: UIViewController {
         springAnimationView.delay = animation.delay
         
         springAnimationView.animate()
-        
     }
-    
-
 }
 
