@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8433DB7227933F1100884E12 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8433DB7127933F1100884E12 /* DataManager.swift */; };
 		84400FDB278F551A00906516 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84400FDA278F551A00906516 /* AppDelegate.swift */; };
 		84400FDD278F551A00906516 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84400FDC278F551A00906516 /* SceneDelegate.swift */; };
 		84400FDF278F551A00906516 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84400FDE278F551A00906516 /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8433DB7127933F1100884E12 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		84400FD7278F551A00906516 /* AnimationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84400FDA278F551A00906516 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84400FDC278F551A00906516 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,6 +54,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8433DB7027933EE500884E12 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8433DB7127933F1100884E12 /* DataManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		84400FCE278F551A00906516 = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +83,7 @@
 		84400FD9278F551A00906516 /* AnimationApp */ = {
 			isa = PBXGroup;
 			children = (
+				8433DB7027933EE500884E12 /* Services */,
 				84400FF2278F556600906516 /* Models */,
 				84400FF1278F555800906516 /* SupportFiles */,
 				84400FF0278F554A00906516 /* ViewControllers */,
@@ -250,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84400FDF278F551A00906516 /* ViewController.swift in Sources */,
+				8433DB7227933F1100884E12 /* DataManager.swift in Sources */,
 				84400FF4278F557B00906516 /* Animation.swift in Sources */,
 				84400FDB278F551A00906516 /* AppDelegate.swift in Sources */,
 				84400FDD278F551A00906516 /* SceneDelegate.swift in Sources */,
