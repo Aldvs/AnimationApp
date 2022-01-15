@@ -19,9 +19,9 @@ struct Animation {
         """
         preset: \(animationName)
         curve: \(animationCurve)
-        force: \(force)
-        duration: \(duration)
-        delay: \(delay)
+        force: \(String(format: "%.02f", force))
+        duration: \(String(format: "%.02f", duration))
+        delay: \(String(format: "%.02f", delay))
         """
     }
     

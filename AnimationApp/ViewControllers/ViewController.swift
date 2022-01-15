@@ -12,15 +12,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var springAnimationView: SpringView!
     @IBOutlet weak var springLabel: SpringLabel!
     
-    private var animation = Animation.getAnimation()
+    private var animation = Animation.getRandomAnimation()
 
     @IBAction func runSpringAnimation(_ sender: SpringButton) {
         
-        springLabel.text = """
- Preset:\(animation.animation) \nCurve:\(animation.animationCurve) \nForce:\(String(format: "%.2f", animation.force)) \nDuration:\(String(format: "%.2f", animation.duration)) \nDelay:\(String(format: "%.2f", animation.delay))
- """
+        springLabel.text = animation.description
         
-        springAnimationView.animation = animation.animation
+        springAnimationView.animation = animation.animationName
         springAnimationView.curve = animation.animationCurve
         springAnimationView.force = animation.force
         springAnimationView.duration = animation.duration
@@ -28,8 +26,8 @@ class ViewController: UIViewController {
         
         springAnimationView.animate()
         
-        animation = Animation.getAnimation()
-        sender.setTitle("Run \(animation.animation)", for: .normal)
+        animation = Animation.getRandomAnimation()
+        sender.setTitle("Run \(animation.animationName)", for: .normal)
     }
 }
 
